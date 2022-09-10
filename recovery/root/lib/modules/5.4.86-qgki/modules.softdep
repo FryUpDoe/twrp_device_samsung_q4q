@@ -1,0 +1,4 @@
+# Soft dependencies extracted from modules themselves.
+softdep stm_ts_spi pre: acpm-mfd-bus
+softdep stm_ts_spi pre: s2dos05-regulator
+softdep machine_dlkm pre: bt_fm_slim
