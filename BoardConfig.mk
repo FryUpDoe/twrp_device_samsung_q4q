@@ -62,7 +62,6 @@ TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone20/temp
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb/dtb.dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/recovery_dtbo
-#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 
@@ -103,7 +102,6 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product odm
 BOARD_ROOT_EXTRA_FOLDERS := cache carrier data_mirror efs keyrefuge linkerconfig metadata omr optics prism spu
 BOARD_SUPPRESS_SECURE_ERASE := true
 
-# Workaround for error copying vendor files to recovery ramdisk
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
@@ -120,15 +118,8 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := false
 BOARD_USES_METADATA_PARTITION := true
 
 # Portrait orientation:
-#
 TW_THEME := portrait_hdpi
 TW_ROTATION := 270
-
-# Landscape orientation:
-#
-#TW_THEME := landscape_hdpi
-#RECOVERY_TOUCHSCREEN_SWAP_XY := true
-#RECOVERY_TOUCHSCREEN_FLIP_Y := true
 
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
@@ -140,7 +131,6 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := true
 TW_USE_NEW_MINADBD := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
-#TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_USE_TOOLBOX := true
 TARGET_USES_MKE2FS := true
 TW_NO_LEGACY_PROPS := true
