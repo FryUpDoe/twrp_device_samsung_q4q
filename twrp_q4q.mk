@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/q4q/recover
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := twrp_q4q
 PRODUCT_DEVICE := q4q
-PRODUCT_MODEL :=SM-F936U
+PRODUCT_MODEL := SM-F936U
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
