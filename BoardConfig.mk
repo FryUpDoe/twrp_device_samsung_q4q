@@ -15,6 +15,7 @@
 #
 
 DEVICE_PATH := device/samsung/q4q
+TARGET_SOC := sm8475
 
 # Bootloader
 BOARD_VENDOR := samsung
